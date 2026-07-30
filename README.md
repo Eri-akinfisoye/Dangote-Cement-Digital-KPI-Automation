@@ -1,4 +1,4 @@
-# Dangote Cement Plc — Digital KPI Automation & Data Quality System
+[production_tab.html](https://github.com/user-attachments/files/30527632/production_tab.html)# Dangote Cement Plc — Digital KPI Automation & Data Quality System
 ### Challenge 4 | Dangote Industries Innovation Challenge 2025
 **Top 20 Finalist** — National Competition
 
@@ -11,6 +11,8 @@ This repository contains the full submission for **Challenge 4: Digital KPI Auto
 The project proposes and documents a complete **Digital KPI Reporting and Governance System** for Dangote Cement Plc, addressing systemic failures in manual daily plant performance reporting across four Nigerian plants: **Obajana**, **Ibese**, **Gboko**, and **Okpella**.
 
 The solution is built entirely on **Microsoft Power Platform** — requiring no new vendor, no custom development stack, and no infrastructure outside of what Dangote likely already operates within Microsoft 365.
+
+<img width="2100" height="1230" alt="Dangote_KPI_Pipeline_Diagram" src="https://github.com/user-attachments/assets/b7e064cf-8ec2-4083-af73-73a807d4ca4a" />
 
 ---
 
@@ -78,6 +80,9 @@ Power BI + RLS — Role-Based Dashboards
 
 **Star schema — 11 tables across two storage tiers:**
 
+<img width="2758" height="3568" alt="Dangote Challenge4 ERD" src="https://github.com/user-attachments/assets/0c1c724c-8bd6-4ef3-b063-a6456a3783fa" />
+
+
 ```
 Dimension Tables (Dataverse)          Fact Tables (SharePoint → Dataverse)
 ────────────────────────────          ────────────────────────────────────
@@ -88,7 +93,9 @@ DIM_Role                              FACT_QualityInput
                                       FACT_MaintenanceInput
                                       FACT_ValidationLog     ← system only
                                       FACT_SubmissionTimeliness ← system only
+
 ```
+
 
 All relationships are Many-to-One. No Many-to-Many relationships exist in the model. Full column definitions, data types, tags (PK, FK, REQ, CALC, SYS), and relationships are documented in the Technical Appendix.
 
@@ -126,6 +133,9 @@ The validation and governance flow runs automatically on every submission:
 9. ON REJECTION     Notify operator with reason → Return to resubmission loop
 10. SCHEDULED       At deadline: check each plant → On-time / Late / Missing → Notify if late
 ```
+
+<img width="3579" height="8571" alt="Power Automate flow chart" src="https://github.com/user-attachments/assets/2be12597-4665-4a2c-aa4c-2019d9fd4486" />
+
 
 ### Validation Rule Library Summary
 
@@ -166,6 +176,8 @@ Based on Dangote Cement's 2025 full-year results:
 | Phase 3 — Optimise | 3–6 months | ERP/SAP integration. Predictive exception rules. SCADA auto-population. Mobile Power BI app for executives. |
 
 ---
+<img width="1280" height="1187" alt="image" src="https://github.com/user-attachments/assets/3291fd21-6db6-479a-be45-2aa7f022c235" />
+
 
 ## Repository Contents
 
