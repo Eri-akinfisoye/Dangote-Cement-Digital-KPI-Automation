@@ -1,4 +1,4 @@
-[production_tab.html](https://github.com/user-attachments/files/30527632/production_tab.html)# Dangote Cement Plc — Digital KPI Automation & Data Quality System
+# Dangote Cement Plc — Digital KPI Automation & Data Quality System
 ### Challenge 4 | Dangote Industries Innovation Challenge 2025
 **Top 20 Finalist** — National Competition
 
